@@ -1,6 +1,6 @@
 # CodePath Todo App
 
-<img src='https://github.com/SiddhataPatil/CodePath_Todo/app/src/main/res/mipmap-hdpi/ic_launcher.png' width="200" height="200" />
+<img src='https://github.com/SiddhataPatil/CodePath_Todo/app/src/main/res/drawable/add_new.png' width="200" height="200" />
 
 # Pre-work - Todo [List It]
 **List It** Android App is designed to make todo lists. This has basic functionalities like **adding new tasks**, **editing** along with **prioritizing tasks**.
