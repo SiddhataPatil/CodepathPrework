@@ -43,7 +43,7 @@ I feel Android studio is better than the Eclipse Ide (I used only Eclipse for An
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
 
-**Answer:** The ArrayAdapter is used to map in our case array of strings in a ListView. Adapter in Android is used to translate data to its View representation (according to the slides video). I think it is important because it directly reflcts on the UI side of the App. ConvertView can be used for reusibility of old objects.
+**Answer:** The ArrayAdapter is used to map in our case array of strings in a ListView. Adapter in Android is used to translate data to its View representation (according to the slides video). I think it is important because it directly reflcts on the UI side of the App. ConvertView can be used for reusibility of old objects, maybe to save memory.
 
 
 ## Notes
