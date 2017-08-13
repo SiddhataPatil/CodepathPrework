@@ -42,7 +42,7 @@ Here's a walkthrough of implemented user stories:
 
 **Problem**: FileUtils was not recognized even after adding compile 'commons-io:commons-io:2.4' as dependency.
 
-**What worked for me**: Had to download .jar and import it as a module and then added it to the dependency.
+**What worked for me**: Had to download commons-io-2.4-sources.jar and import it as a module and then added it to the dependency.
 
 ## Application Configuration setting
 
