@@ -25,9 +25,6 @@ The following **optional** features are implemented:
 * [x] Add support for selecting the priority of each todo item (and display in listview item)
 * [x] Tweak the style improving the UI / UX, play with colors, images or backgrounds
 
-The following **additional** features are implemented:
-
-* [x] Allows you to put a 'star' to the list to prioritize it, which automatically takes the task to the top of all the other tasks.
 
 ## Video Walkthrough 
 
