@@ -32,6 +32,18 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/SiddhataPatil/CodePath_Todo/blob/master/Todogif.gif' width="400" height="750" />
 
+## Project Analysis
+
+As part of your pre-work submission, please reflect on the app and answer the following questions below:
+
+**Question 1:** "What are your reactions to the Android app development platform so far? Compare and contrast Android's approach to layouts and user interfaces in past platforms you've used."
+
+**Answer:** Android development platform is used by many. So even if you get stuck anywhere, there is atleast one stack overflow solution that will work for you! 
+I feel Android studio is better than the Eclipse Ide (I used only Eclipse for Android development before). One great thing is we can view the xml as well as Design at the same time which we cannot do in Eclipse. But, I struggled with library support in Android Studio.
+
+**Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
+
+**Answer:** The ArrayAdapter is used to maintain in our case array of strings in a List.
 
 ## Notes
 
