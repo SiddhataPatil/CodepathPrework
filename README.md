@@ -27,8 +27,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [x] Allows you to put a 'star' to the list to prioritize it, which automatically takes the list to the top of all the other lists.
-* [x] If there is no priority, your latest list is at the top. 
+* [x] Allows you to put a 'star' to the list to prioritize it, which automatically takes the task to the top of all the other tasks.
 
 ## Video Walkthrough 
 
