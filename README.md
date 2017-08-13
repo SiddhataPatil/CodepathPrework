@@ -40,8 +40,12 @@ Here's a walkthrough of implemented user stories:
 ## Notes
 
 **Problem**: R.java got removed from my working project.
-**What worked for me**: Started a new application project and copied all my files there.
+
+**What worked for me**: Started a new application project and imported all my files there.
+
+
 **Problem**: FileUtils was not recognized even after adding compile 'commons-io:commons-io:2.4' as dependency.
+
 **What worked for me**: Had to download .jar and import it as a module and then added it to the dependency.
 
 ## Application Configuration setting
