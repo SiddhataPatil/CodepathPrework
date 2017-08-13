@@ -43,7 +43,7 @@ I feel Android studio is better than the Eclipse Ide (I used only Eclipse for An
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
 
-**Answer:** The ArrayAdapter is used to maintain in our case array of strings in a List.
+**Answer:** 
 
 ## Notes
 
