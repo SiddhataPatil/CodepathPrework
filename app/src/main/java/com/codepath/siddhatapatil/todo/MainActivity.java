@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
@@ -63,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
                 TodoItemDatabase.TaskEntry.COL_TASK + " = ?",
                 new String[]{task});
         db.close();
+        Toast toast = Toast.makeText(getApplicationContext(),
+                getResources().getString(R.string.action_delete),
+                Toast.LENGTH_SHORT);
+        toast.show();
         populateArrayItems();
     }
 
@@ -89,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
         cursor.close();
         db.close();
     }
+
+
 
 
 // Trying to do with sqlite..so commented the code out
@@ -145,5 +152,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void calendar(View view) {
+        //open calendar to set a date
+    }
 }
 
