@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 * [x] Add support for selecting the priority of each todo item (and display in listview item)
 * Gold star was added to show Priority task
 * [x] Tweak the style improving the UI / UX, play with colors, images or backgrounds
-* (Used ImageButtons[adding task, deleting tasks and  priority] and modified background to improve UI)
+* Used ImageButtons(adding task, deleting tasks and  priority) and modified background to improve UI
 
 
 ## Video Walkthrough 
