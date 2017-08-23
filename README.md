@@ -3,7 +3,7 @@
 <img src='https://github.com/SiddhataPatil/CodePath_Todo/blob/master/app/src/main/res/drawable/add_new.png' width="200" height="200" />
 
 # Pre-work - Todo [List It]
-**List It** Android App is designed to make todo lists. This has basic functionalities like **adding new tasks**, **editing** along with **prioritizing tasks**.
+**List It** Android App is designed to make todo lists. This has basic functionalities like **adding new tasks**, **removing tasks**,**editing** along with **prioritizing**.
 
 Submitted by: **Siddhata Patil**
 
@@ -18,19 +18,21 @@ The following **required** functionality is completed:
 * [x] User can **persist todo items** and retrieve them properly on app restart
 
 The following **optional** features are implemented:
-* [ ] Persist the todo items [into SQLite](http://guides.codepath.com/android/Persisting-Data-to-the-Device#sqlite) instead of a text file
+* [x] Persist the todo items [into SQLite](http://guides.codepath.com/android/Persisting-Data-to-the-Device#sqlite) instead of a text file
 * [x] Improve style of the todo items in the list [using a custom adapter](http://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView)
 * [ ] Add support for completion due dates for todo items (and display within listview item) 
 * [ ] Use a [DialogFragment](http://guides.codepath.com/android/Using-DialogFragment) instead of new Activity for editing items
 * [x] Add support for selecting the priority of each todo item (and display in listview item)
+* Gold star was added to show Priority task
 * [x] Tweak the style improving the UI / UX, play with colors, images or backgrounds
+* Used ImageButtons(adding task, deleting tasks and  priority) and modified background to improve UI
 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/SiddhataPatil/CodePath_Todo/blob/master/Todogif.gif' width="400" height="750" />
+<img src='https://github.com/SiddhataPatil/CodepathPrework/blob/master/Prework.gif' width="400" height="750" />
 
 ## Project Analysis
 
@@ -61,12 +63,12 @@ I feel Android studio is better than the Eclipse Ide (I used only Eclipse for An
 
 Android Studio Version: 2.2.3
 
-Minimum Required SDK: API 23
+Minimum Required SDK: API 21
 
 
 ## License
 
-    Copyright 2016 Siddhata Patil
+    Copyright 2017 Siddhata Patil
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
