@@ -3,7 +3,7 @@
 <img src='https://github.com/SiddhataPatil/CodePath_Todo/blob/master/app/src/main/res/drawable/add_new.png' width="200" height="200" />
 
 # Pre-work - Todo [List It]
-**List It** Android App is designed to make todo lists. This has basic functionalities like **adding new tasks**, **editing** along with **prioritizing tasks**.
+**List It** Android App is designed to make todo lists. This has basic functionalities like **adding new tasks**, **removing tasks**,**editing** along with **prioritizing**.
 
 Submitted by: **Siddhata Patil**
 
