@@ -17,6 +17,12 @@ import android.view.View;
 
 import java.util.ArrayList;
 
+import android.database.sqlite.SQLiteDatabase;
+import android.database.Cursor;
+
+import com.codepath.siddhatapatil.todo.sqLite.TodoItemDatabase;
+import com.codepath.siddhatapatil.todo.sqLite.TodoItemDatabaseHelper;
+
 public class MainActivity extends AppCompatActivity {
     ArrayList<String> todoitems;
     ArrayAdapter<String> aTodoAdapter;
@@ -24,12 +30,13 @@ public class MainActivity extends AppCompatActivity {
     EditText etEditText;
     ImageView image;
     boolean flag = true;
+    private TodoItemDatabaseHelper database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        populateArrayItems();
+        database = new TodoItemDatabaseHelper(this);
         lvItems = (ListView)findViewById(R.id.lvItems);
         lvItems.setAdapter(aTodoAdapter);
         etEditText = (EditText)findViewById(R.id.etEditText);
@@ -44,19 +51,46 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         image = (ImageView) findViewById(R.id.imageButton1);
+        populateArrayItems();
     }
 
-    public void populateArrayItems()
-    {
+    public void delete(View view) {
+        View parent = (View) view.getParent();
+        lvItems = (ListView)findViewById(R.id.lvItems);
+        String task = String.valueOf(todoitems);
+        SQLiteDatabase db = database.getWritableDatabase();
+        db.delete(TodoItemDatabase.TaskEntry.TABLE,
+                TodoItemDatabase.TaskEntry.COL_TASK + " = ?",
+                new String[]{task});
+        db.close();
+        populateArrayItems();
+    }
+
+    private void populateArrayItems() {
         todoitems = new ArrayList<String>();
-        //todoitems.add("Item 1");
-        //todoitems.add("Item 2");
-        //todoitems.add("Item 3");
-        //readItems();
-        aTodoAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, todoitems);
+        SQLiteDatabase db = database.getReadableDatabase();
+        Cursor cursor = db.query(TodoItemDatabase.TaskEntry.TABLE,
+                new String[]{TodoItemDatabase.TaskEntry._ID, TodoItemDatabase.TaskEntry.COL_TASK},
+                null, null, null, null, null);
+        while (cursor.moveToNext()) {
+            int idx = cursor.getColumnIndex(TodoItemDatabase.TaskEntry.COL_TASK);
+            todoitems.add(cursor.getString(idx));
+        }
 
+        if (aTodoAdapter == null) {
+            aTodoAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, todoitems);
+            lvItems.setAdapter(aTodoAdapter);
+        } else {
+            aTodoAdapter.clear();
+            aTodoAdapter.addAll(todoitems);
+            aTodoAdapter.notifyDataSetChanged();
+        }
 
+        cursor.close();
+        db.close();
     }
+
+
 // Trying to do with sqlite..so commented the code out
     /*
     private void readItems()
@@ -101,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    image.setImageResource(R.drawable.star_shape);
+                    image.setImageResource(R.drawable.star);
                     flag=true;
                 }
                 return;
@@ -109,5 +143,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+
 }
 
