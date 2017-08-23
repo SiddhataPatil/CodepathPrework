@@ -32,7 +32,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/SiddhataPatil/CodePath_Todo/blob/master/Todogif.gif' width="400" height="750" />
+<img src='https://github.com/SiddhataPatil/CodepathPrework/blob/master/Prework.gif' width="400" height="750" />
 
 ## Project Analysis
 
