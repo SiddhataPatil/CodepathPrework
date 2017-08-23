@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 * [ ] Use a [DialogFragment](http://guides.codepath.com/android/Using-DialogFragment) instead of new Activity for editing items
 * [x] Add support for selecting the priority of each todo item (and display in listview item)
 * [x] Tweak the style improving the UI / UX, play with colors, images or backgrounds
-* (Used ImageButtons and modified background to improve UI)
+* (Used ImageButtons[adding task, deleting tasks and  priority] and modified background to improve UI)
 * [x] Gold star was added to show Priority task
 
 ## Video Walkthrough 
