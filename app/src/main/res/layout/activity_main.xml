@@ -81,10 +81,10 @@
         android:background="@drawable/date"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:onClick="calendar"
         android:layout_marginBottom="145dp"
         android:layout_marginRight="5dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true" />
+
 
 </RelativeLayout>

@@ -5,16 +5,20 @@ import android.os.Bundle;
 
 import android.widget.AdapterView;
 import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.widget.CalendarView;
+import android.content.Intent;
 
 import java.io.File;
 import java.io.IOException;
 
 import android.view.View;
+import android.view.View.OnClickListener;
 
 import java.util.ArrayList;
 
@@ -37,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageButton button;
+        button = (ImageButton) findViewById(R.id.alarm);
+        button.setOnClickListener(new OnClickListener() {
+                                      public void onClick(View arg0) {
+                                          Intent myIntent = new Intent(MainActivity.this,
+                                                  Calendar.class);
+                                          startActivity(myIntent);
+                                      }
+        });
         database = new TodoItemDatabaseHelper(this);
         lvItems = (ListView)findViewById(R.id.lvItems);
         lvItems.setAdapter(aTodoAdapter);
@@ -152,8 +165,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void calendar(View view) {
-        //open calendar to set a date
-    }
 }
 

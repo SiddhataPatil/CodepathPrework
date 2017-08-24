@@ -2,4 +2,5 @@
     <string name="app_name">Todo</string>
     <string name="add_item">Add a new item...</string>
     <string name="action_delete">List Deleted</string>
+    <string name="action_alarm">Alarm set for the date @ 9 am</string>
 </resources>
